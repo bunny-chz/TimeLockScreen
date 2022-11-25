@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">定时锁屏</string>
+    <string name="setTimeTitle">请设置锁屏的时间</string>
+    <string name="lock_activity_title">此界面为锁屏的Activity</string>
+    <string name="activateBtnTitle">授予权限</string>
+    <string name="testLock">测试锁屏功能，一键锁屏</string>
+    <string name="QSTile_Label">一键锁屏</string>
+    <string name="hourEt">小时</string>
+    <string name="minEt">分</string>
+    <string name="secEt">秒</string>
+</resources>
