@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 if(policyManager.isAdminActive(mDeviceAdminSample))
                 {
                     targetTime = (hour * 60 * 60 + min * 60 + sec) * 1000;
-                    finalTime.setText("已设置的时间是 " + hour + "小时 " + min + "分 " + sec + "秒\n\n屏幕将在 " + targetTime/1000 + " 秒后关闭");
+                    finalTime.setText("已设置的时间是 " + hour + "小时 " + min + "分 " + sec + "秒\n屏幕将在 " + targetTime/1000 + " 秒后关闭");
 //                    allTime = (hour * 60 * 60 + min * 60 + sec);
 //                    Log.d(TAG,"allTime ---> " + allTime);
 //                    alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (allTime * 1000), pendingIntent);
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                 if(policyManager.isAdminActive(mDeviceAdminSample))
                 {
                     targetTime = (hour * 60 * 60 + min * 60 + sec) * 1000;
-                    finalTime.setText("已设置的时间是 " + hour + "小时 " + min + "分 " + sec + "秒\n\n屏幕将在 " + targetTime/1000 + " 秒后关闭");
+                    finalTime.setText("已设置的时间是 " + hour + "小时 " + min + "分 " + sec + "秒\n屏幕将在 " + targetTime/1000 + " 秒后关闭");
                     Intent home = new Intent(Intent.ACTION_MAIN);
                     home.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     home.addCategory(Intent.CATEGORY_HOME);
