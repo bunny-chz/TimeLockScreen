@@ -7,6 +7,19 @@
     android:background="#ECF0F3"
     tools:context="com.bunny.TimeLockScreen.MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="●免责声明●：本软件只用于学习交流，请勿它用，且不一定适用于某些手机。如造成不良损失和影响，开发者不负任何责任。"
+        android:textColor="#FF0000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        app:shape_roundRect_backgroundColor="#41AEFF" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,13 +32,13 @@
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintVertical_bias="0.22"
         app:shape_roundRect_backgroundColor="#41AEFF" />
 
     <com.bunny.TimeLockScreen.sshadkany.RectButton
         android:id="@+id/activateBtn"
-        android:layout_width="210dp"
-        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -40,8 +53,8 @@
 
         <ImageView
             android:id="@+id/activateBtnImg"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
             android:padding="15dp"
             android:src="@mipmap/activate"
@@ -53,15 +66,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/activateBtnTitle"
         android:textColor="#2B91FF"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.018"
-        android:textSize="13sp"
-        android:text="@string/activateBtnTitle"
         app:shape_roundRect_backgroundColor="#41AEFF" />
 
     <com.bunny.TimeLockScreen.sshadkany.shapes.RoundRectView
@@ -136,10 +149,10 @@
                 android:layout_width="58dp"
                 android:layout_height="84dp"
                 android:layout_margin="35dp"
-                android:textColor="#418DFF"
                 android:hint="@string/minEt"
                 android:inputType="numberDecimal"
-                android:textColorHint="#9C9A9A"/>
+                android:textColor="#418DFF"
+                android:textColorHint="#9C9A9A" />
 
         </com.bunny.TimeLockScreen.sshadkany.shapes.RoundRectView>
     </com.bunny.TimeLockScreen.sshadkany.shapes.RoundRectView>
@@ -176,10 +189,10 @@
                 android:layout_width="58dp"
                 android:layout_height="84dp"
                 android:layout_margin="35dp"
-                android:textColor="#418DFF"
                 android:hint="@string/secEt"
                 android:inputType="numberDecimal"
-                android:textColorHint="#9C9A9A"/>
+                android:textColor="#418DFF"
+                android:textColorHint="#9C9A9A" />
 
         </com.bunny.TimeLockScreen.sshadkany.shapes.RoundRectView>
     </com.bunny.TimeLockScreen.sshadkany.shapes.RoundRectView>
@@ -189,13 +202,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#2B91FF"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.39"
+        app:shape_roundRect_backgroundColor="#41AEFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="●注意●：一旦锁屏后，一定要输入锁屏密码才能使用手机，请问问自己是否记得密码！"
+        android:textColor="#FF0000"
         android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40"
+        app:shape_roundRect_backgroundColor="#41AEFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始定时"
+        android:textColor="#2B91FF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
         app:shape_roundRect_backgroundColor="#41AEFF" />
 
     <com.bunny.TimeLockScreen.sshadkany.RectButton
@@ -204,10 +245,10 @@
         android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525"
+        app:layout_constraintVertical_bias="0.56"
         app:shape_roundRect_backgroundColor="#ECF0F3"
         app:shape_roundRect_bottomLeftRadius="50dp"
         app:shape_roundRect_bottomRightRadius="50dp"
@@ -226,18 +267,61 @@
 
     </com.bunny.TimeLockScreen.sshadkany.RectButton>
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="30分定时"
         android:textColor="#2B91FF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
+        app:shape_roundRect_backgroundColor="#41AEFF" />
+
+    <com.bunny.TimeLockScreen.sshadkany.RectButton
+        android:id="@+id/thirtyMinBtn"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:shape_roundRect_backgroundColor="#ECF0F3"
+        app:shape_roundRect_bottomLeftRadius="50dp"
+        app:shape_roundRect_bottomRightRadius="50dp"
+        app:shape_roundRect_topLeftRadius="50dp"
+        app:shape_roundRect_topRightRadius="50dp">
+
+        <ImageView
+            android:id="@+id/thirtyMinBtnImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@mipmap/thirty_min"
+            app:tint="#2C25FF" />
+
+
+    </com.bunny.TimeLockScreen.sshadkany.RectButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/testLock"
+        android:textColor="#2B91FF"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.645"
-        android:textSize="13sp"
-        android:text="@string/testLock"
         app:shape_roundRect_backgroundColor="#41AEFF" />
 
     <com.bunny.TimeLockScreen.sshadkany.RectButton
