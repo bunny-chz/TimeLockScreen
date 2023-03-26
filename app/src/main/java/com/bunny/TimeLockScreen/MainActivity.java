@@ -211,5 +211,4 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, "请先授予软件锁屏的权限，否则软件无法正常执行功能");
         startActivity(intent);
     }
-
 }
