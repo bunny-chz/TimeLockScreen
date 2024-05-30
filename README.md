@@ -3,24 +3,27 @@
 
 
 
-## TimeLockScreen_V1.0.0 实现原理
+### TimeLockScreen_V1.0.0 实现原理
 锁屏需要授予系统锁屏的权限，要在Manifest配置好ServiceReceiver
 
 定时实现原理使用安卓的重写onPause()方法，应用进入后台后，Java的 Thread.sleep()睡眠，待定设定好的时间，时间一过就锁屏。
 
 
 
-## TimeLockScreen_V2.0.0 实现原理
-为了不被系统杀死，使用无障碍模式在后台计时，在到时间点时，调用锁屏函数。需要在Manifest注册无障碍服务。
+### TimeLockScreen_V2.0.0 实现原理
+为了不被系统杀死，使用无障碍模式在后台计时，在到时间点时，调用锁屏函数。需要在Manifest注册无障碍服务。注：用户反馈小米手机不可用。
+
 
 
 
 抖音演示视频：
 
 V1.0.0
+
 https://v.douyin.com/rbyWYnJ/
 
 V2.0.0
+
 https://v.douyin.com/ijj2tP3H/
 
 
